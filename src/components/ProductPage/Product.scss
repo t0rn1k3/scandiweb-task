@@ -1,0 +1,46 @@
+.product {
+    width: 400px;
+    cursor: pointer;
+    padding: 55px 25px;
+
+    .image{
+        width: 400px;
+        height: 400px;
+        background-color: rgb(237, 233, 233);
+        background-size: cover;
+        position: relative;
+
+        .image-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .circle-icon {
+            position: absolute;
+            right: 20px;
+            bottom: -10%;
+            opacity: 0;
+        }
+    }
+    .name-price {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            text-align: start;
+            font-size: 18px;
+            padding: 5px 0;
+        }
+        .price {
+            font-weight: bold;
+        }
+    }
+}
+.product:hover {
+    scale: 1.1;
+    transition: 0.3s ease-out;
+}
+.product:hover .circle-icon {
+    opacity: 1;
+}

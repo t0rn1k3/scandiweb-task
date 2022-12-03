@@ -1,0 +1,21 @@
+.currency-switch {
+    width: 7rem;
+    background-color: #ffff;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    z-index: 1;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            width: 100%;
+            padding: 10px 0;
+        }
+        li:hover {
+            background-color: #EEEEEE;
+        }
+    }
+}

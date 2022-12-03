@@ -1,0 +1,41 @@
+.nav {
+    width: 15vw;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        
+        li{
+            display: inline-block;
+            position: relative;
+            padding: 10px;
+            a{
+                text-decoration: none;
+                color: #1D1F22;
+            }
+           
+        }
+        li:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #5ECE7B;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        li:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        li:hover a {
+            color: #5ECE7B;
+        }
+    }
+}
